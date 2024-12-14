@@ -20,7 +20,7 @@ service.criar_usuario(nome, email, senha)
 
 # Exibindo todos os registros na tabela "usuarios" do banco de dados.
 print("\n=== Listando usuários cadastrados ===")
-lista_usuario = service
+lista_usuario = service.listar_todos_usuarios
 for usuario in lista_usuario:
-    print(f"Nome: {usuario.nome} \nE-mail: {usuario.email}")
+    print(f" Seu Nome: {usuario.nome} \nE-mail: {usuario.email}")
 
